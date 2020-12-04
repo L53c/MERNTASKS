@@ -27,8 +27,6 @@ app.use('/api/tareas', require('./routes/tareas'));
 // app.get('/', (req, res) => res.send('Hola Mundo'));
 
 // arrancar la app
-app.listen(port, '0.0.0.0', () => serverMessage(port))
-
-function serverMessage(port) {
+app.listen(port, '0.0.0.0', () => {
   console.log(`local server is running at port ${port}`);
-}
+});
